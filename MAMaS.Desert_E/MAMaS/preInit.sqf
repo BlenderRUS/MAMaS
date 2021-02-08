@@ -3,6 +3,7 @@
 
 enableSaving [false, false];
 enableEngineArtillery false;
+ace_sys_wounds_no_medical_gear=true; // отключает дефолтную выдачу медицины
 
 call compile preprocessFileLineNumbers "MAMaS\Scripts\ace_settings.sqf";
 
