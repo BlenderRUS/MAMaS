@@ -22,13 +22,12 @@ _item_processor = {
 	_this addWeapon "ItemRadio";/**/
 };
 _med_processor = {
-	_this addMagazine "ACE_Tourniquet";
-	_this addMagazine "ACE_LargeBandage";
+	// ace_sys_ruck не синхронизирован в мультиплеере, поэтому так
+	_unit setVariable ["ACE_IFAK_Contents", [1, 1, 1], true];
 	_this addMagazine "ACE_Bandage";
 	_this addMagazine "ACE_Morphine";
 	_this addMagazine "ACE_Morphine";
 	_this addMagazine "ACE_Epinephrine";
-	_this addMagazine "ACE_Bandage";
 };
 _weapon_processor = {
 	removeAllWeapons _this;
