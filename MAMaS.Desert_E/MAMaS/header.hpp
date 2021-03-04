@@ -11,8 +11,8 @@ class Extended_PostInit_EventHandlers {
 	};
 };
 
-MAMaS_version = 45;
-MAMaS_edition = "Hyperio";
+MAMaS_version = 46;
+MAMaS_edition = "Inion";
 respawn = 1;
 respawndelay = 3;
 class Header	{
