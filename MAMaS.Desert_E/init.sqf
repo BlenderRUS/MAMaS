@@ -1,7 +1,14 @@
 c_balca_balca_enabled = false;
 
+//Добавление дополнительных классов экипажников
+if (!isDedicated) then {
+	relCrew = [];
+	relCommander = [];
+	relPilot = [];
+};	
+
+// таймер на завершение миссии по времени (Убрать комменты ниже)
 /*
-// таймер на завершение миссии по времени
 if (isServer) then {
   [] spawn {
    waitUntil { sleep 0.3; !isNil "warbegins" && {warbegins == 1} };

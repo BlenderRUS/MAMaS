@@ -5,7 +5,7 @@ _AI_processor = {
 	_this setBehaviour "SAFE";
 	_this allowFleeing 0;
 	_this disableAI "AUTOTARGET";
-	_this disableAI "ANIM";
+	//_this disableAI "ANIM"; не ставить, боты убегают при логауте
 	_this disableAI "PATHPLAN";
 	//_this setCombatMode "BLUE";
 	_this doWatch objNull;
@@ -23,7 +23,8 @@ _item_processor = {
 };
 _med_processor = {
 	// ace_sys_ruck не синхронизирован в мультиплеере, поэтому так
-	_unit setVariable ["ACE_IFAK_Contents", [1, 1, 1], true];
+	// ACE_IFAK_Contents добавляет ACE_LargeBandage, ACE_Bandage, ACE_Tourniquet
+	_unit setVariable ["ACE_IFAK_Contents", [1, 1, 1], true]; 
 	_this addMagazine "ACE_Bandage";
 	_this addMagazine "ACE_Morphine";
 	_this addMagazine "ACE_Morphine";
