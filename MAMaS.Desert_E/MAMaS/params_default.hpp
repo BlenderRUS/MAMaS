@@ -14,7 +14,7 @@ class briefing_mode {
 	title = "$STR_briefing_mode";
 	values[] = {0,1,2,3,4,5};
 	texts[] = {$STR_briefing_mode_Option0,$STR_briefing_mode_Option1,$STR_briefing_mode_Option2,$STR_briefing_mode_Option3,$STR_briefing_mode_Option4,$STR_briefing_mode_Option5};
-	default = 5;
+	default = 4;
 };
 class loading {
 	title = "$STR_MAMaS_loading";
@@ -51,5 +51,5 @@ class HardFreeze {
 	title = "$STR_MAMaS_HardFreeze";
 	values[] = {0,1,2,3,4,5};
 	texts[] = {$STR_Off,$STR_MAMaS_HardFreeze_1,$STR_MAMaS_HardFreeze_2,$STR_MAMaS_HardFreeze_3,$STR_MAMaS_HardFreeze_4,$STR_MAMaS_HardFreeze_5};
-	default = 1;
+	default = 0;
 };
